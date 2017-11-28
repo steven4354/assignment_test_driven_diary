@@ -23,13 +23,7 @@ class Diary {
     });
   }
   entriesWithTag(tag) {
-    let array = this.entries.filter(obj => {
-      if (obj.tag === tag) {
-        return true;
-      } else {
-        return false;
-      }
-    });
+    let array = this.entries.filter(obj =>  obj.tag === tag);
   }
   // entry: string => {
   //   fs.readFile('./diary.json', 'utf8', (err, data) => {
